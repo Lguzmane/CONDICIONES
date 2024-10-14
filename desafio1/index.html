@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso 1</title>
+</head>
+<body>
+    <h2>Haz clic en la imagen del gatito para agregar o quitar el borde rojo</h2>
+    <img id="imagen-a-trabajar" src="assets/img/gatito.png" alt="Imagen del Desafío" style="width: 300px;">
+    
+    <script>
+        const imagen = document.querySelector('#imagen-a-trabajar');
+        imagen.onclick = function() {
+            if (imagen.style.border === '2px solid red') {
+                imagen.style.border = 'none';
+            } else {
+                imagen.style.border = '2px solid red';
+            }
+        }
+    </script>
+</body>
+</html>
